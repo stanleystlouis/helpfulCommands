@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Practice and Learn: Git cheatsheet</title>
+
+
+</head>
+
+<body>
+    <h2 id="gitTitle">Git Cheatsheet</h2>
+
+    <div class="container mt-5">
+
+        <div class="col-md-10">
+            <div class="rounded">
+                <div class="table-responsive table-borderless">
+                    <div class="table table-borderless">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <a href=""></a>
+                                    <th class="pointer" onclick="gitBasicsDisplayToggle()">
+                                        Git Basics:
+                                    </th>
+                                    </a>
+                                    <th></th>
+                                </tr>
+                            </thead>
+
+                            <tbody class="table-body" id="gitBasicsInfo">
+                                <tr class="cell-1" data-toggle="collapse" data-target="#demo">
+
+                                    <td>
+                                        mkdir &lt;directory-name&gt;
+                                    </td>
+                                    <td>
+                                        Make directory, folder
+                                    </td>
+
+                                </tr>
+
+
+                                <tr></tr>
+                                <td>
+                                    cd &lt;directory-name&gt;
+                                </td>
+                                <td>
+                                    Change directory
+                                </td>
+                                <tr></tr>
+                                <td>
+                                    git init
+                                </td>
+                                <td>
+                                    Initialize directory
+                                </td>
+                                <tr></tr>
+                                <td>
+                                    ls
+                                </td>
+                                <td>
+                                    list contents of file or directory
+                                </td>
+                                <tr></tr>
+                                <td>
+                                    touch &lt;filename&gt;
+                                </td>
+                                <td>
+                                    Create file
+                                </td>
+                                <tr></tr>
+                                <td>
+                                    git status
+                                </td>
+                                <td>
+                                    get files status
+                                </td>
+                                <tr></tr>
+                                <td>
+                                    git add &lt;filename&gt;
+                                </td>
+                                <td>
+                                    add file to staging area
+                                </td>
+                                <tr></tr>
+                                <td>
+                                    git add .
+                                </td>
+                                <td>
+                                    add all files to staging area
+                                </td>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+
+
+        <div class="table-responsive table-borderless">
+            <div class="table table-borderless">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="pointer" onclick="gitCommitDisplayToggle()">
+                                Commit:
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="table-body" id="gitCommitInfo">
+                        <tr class="cell-1" data-toggle="collapse" data-target="#demo">
+                            <td>
+                                git commit
+                            </td>
+                            <td>
+                                commit file with editor
+                            </td>
+                        </tr>
+                        <tr></tr>
+                        <td>
+                            git commit -m &lt;description&gt;
+                        </td>
+                        <td>
+                            commit from the command line
+                        </td>
+                        <tr></tr>
+                        <td>
+                            git commit --amend
+                        </td>
+                        <td>
+                            amending a commit
+                        </td>
+                        <tr></tr>
+                        <td>
+                            git log
+                        </td>
+                        <td>
+                            view log of all commits
+                        </td>
+                        <tr></tr>
+                        <td>
+                            git log --oneline
+                        </td>
+                        <td>
+                            view in one line
+                        </td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="table-responsive table-borderless">
+            <div class="table table-borderless">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="pointer" onclick="gitBranchDisplayToggle()">
+                                Branch:
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body" id="gitBranchInfo">
+                        <tr class="cell-1" data-toggle="collapse" data-target="#demo">
+                            <td>
+                                git branch
+                            </td>
+                            <td>
+                                Displays branch
+                            </td>
+                        </tr>
+                        <tr></tr>
+                        <td>
+                            git branch -r
+                        </td>
+                        <td>
+                            commit from the command line
+                        </td>
+                        <tr></tr>
+                        <td>
+                            git branch &lt;branch-Name&gt;
+                        </td>
+                        <td>
+                            create new branch
+                        </td>
+                        <tr></tr>
+                        <td>
+                            git switch -c &lt;branch-name&gt;
+                        </td>
+                        <td>
+                            create and enter branch
+                        </td>
+                        <tr></tr>
+                        <td>
+                            switch between branches
+                        </td>
+                        <td>
+                            switch between branches
+                        </td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+            <div class="table-responsive table-borderless">
+                <div class="table table-borderless">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="pointer" onclick="gitPullDisplayToggle()">
+                                    Pull:
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-body" id="gitPullInfo">
+                            <tr class="cell-1" data-toggle="collapse" data-target="#demo">
+                                <td>
+                                    git pull &lt;remote&gt;
+                                </td>
+                                <td>
+                                    get latest changes to local repo without integration with existing code
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <td>
+                                git pull &lt;remote&gt; &lt;branch-name&gt;
+                            </td>
+                            <td>
+                                get latest changes to local repo without integration with existing code
+                            </td>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+                <div class="table-responsive table-borderless">
+                    <div class="table table-borderless">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="pointer" onclick="gitPushDisplayToggle()">
+                                        Push:
+                                    </th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-body" id="gitPushInfo">
+                                <tr class="cell-1" data-toggle="collapse" data-target="#demo">
+                                    <td>
+                                        git push origin &lt;branch-name&gt;
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                </tr>
+                                <tr></tr>
+                                <td>
+                                    git push origin &lt;local&gt;:&lt;destination&gt;
+                                </td>
+                                <td>
+                                    
+                                </td>
+                                <tr></tr>
+                                <td>
+                                    git push -u origin <branch-name>
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                    <div class="table-responsive table-borderless">
+                        <div class="table table-borderless">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="pointer" onclick="gitRestoreDisplayToggle()">
+                                            Restore:
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body" id="gitRestoreInfo">
+                                    <tr class="cell-1" data-toggle="collapse" data-target="#demo">
+                                        <td>
+                                            git restore &lt;filename&gt;
+                                        </td>
+                                        <td>
+                                            delete uncommit changes in file
+                                        </td>
+                                    </tr>
+                                    <tr></tr>
+                                    <td>
+                                        git restore --staged &lt;filename&gt;
+                                    </td>
+                                    <td>
+                                        unstage file
+                                    </td> 
+                                    <tr></tr>
+                                    <td>
+                                        git restore --source HEAD~&lt;commit #&gt; &lt;filename&gt;
+                                    </td>
+                                    <td>
+                                        restore up to that commit
+                                    </td>                                          
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                        <div class="table-responsive table-borderless">
+                            <div class="table table-borderless">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="pointer" onclick="gitGithubDisplayToggle()">
+                                                Useful Github Funtionalities:
+                                            </th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-body" id="gitGithubInfo">
+                                        <tr class="cell-1" data-toggle="collapse" data-target="#demo">
+                                            <td>
+                                                Git gist 
+                                            </td>
+                                            <td>
+                                                Host snipet of code
+                                            </td>
+                                        </tr>
+                                        <tr></tr>
+                                        <td>
+                                            Host pages
+                                        </td>
+                                        <td>
+                                            host pages on Github
+                                        </td>
+                                        <tr></tr>
+                                        <td>
+                                            Pull request
+                                        </td>
+                                        <td>
+                                            Request merge access
+                                        </td>
+                                        <tr></tr>
+                                        <td>
+                                            Forking
+                                        </td>
+                                        <td>
+                                            copy a repo to your directory
+                                        </td>                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+
+            <p> Please visit
+                <a href="https://git-scm.com/doc" target="_blank" rel="noopener noreferrer">Git Docs</a>
+                for more details
+            </p>
+
+
+            <div></div>
+
+
+</body>
+
+</html>
