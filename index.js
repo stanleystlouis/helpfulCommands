@@ -20,7 +20,12 @@ function myFunction() {
 
 //changing background color
 */
-
+$.get("navigation.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+});
+$(function(){
+    $("#nav-placeholder").load("navigation.html");
+  });
 
 function gitBasicsDisplayToggle() {
 
