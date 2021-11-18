@@ -19,10 +19,11 @@ function myFunction() {
 }
 
 //changing background color
+//NavBar
 */
-$.get("navigation.html", function(data){
-    $("#nav-placeholder").replaceWith(data);
-});
+// $.get("navigation.html", function(data){
+//     $("#nav-placeholder").replaceWith(data);
+// });
 $(function(){
     $("#nav-placeholder").load("navigation.html");
   });
