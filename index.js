@@ -24,9 +24,9 @@ function myFunction() {
 $.get("navigation.html", function(data){
     $("#nav-placeholder").replaceWith(data);
 });
-// $(function(){
-//     $("#nav-placeholder").load("navigation.html");
-//   });
+$(function(){
+    $("#nav-placeholder").load("navigation.html");
+  });
 
 function gitBasicsDisplayToggle() {
 
